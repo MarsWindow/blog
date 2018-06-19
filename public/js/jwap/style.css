@@ -1,0 +1,39 @@
+.jwapLoading{z-index:999; display:none; position:fixed; top:0; width:100%; height:100%; overflow:hidden; font-size:20px; color:#fff; text-align:center; background:url(./images/bg.png);}
+.jwapLoading .jwapListBox{width:110px; height:100px; overflow:hidden; margin:0 auto; background:url(./images/bg.png);}
+.jwapLoading .jwapListBox .jwapImage{padding:15px 0 8px 0;}
+.jwapLoading .jwapListBox .jwapImage img{width:40px; margin:0 auto;}
+.jwapLoading .jwapListBox .jwapText{line-height:24px; font-size:16px; white-space:nowrap; text-overflow:ellipsis; overflow: hidden;}
+
+.jwapMessage{z-index:998; display:none; position:fixed; top:0; width:100%; height:100%; overflow:hidden; font-size:16px; color:#666; text-align:center; background:url(./images/bg.png);}
+.jwapMessage .jwapInner{padding:0 20px;}
+.jwapMessage .jwapInner .jwapListBox{margin: 0 auto; max-width:600px; overflow:hidden; background:#fff; border:1px solid #ccc;}
+.jwapMessage .jwapInner .jwapListBox .jwapTitle{color:#fff; background:#006aed; line-height:24px; padding:5px 10px; text-align:left; border-bottom:1px solid #ccc; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+
+.jwapClose{float: right;font-size: 21px;font-weight: bold;line-height: 1;color:#000;text-shadow: 0 1px 0 #fff;filter: alpha(opacity=20);opacity:0.5;}
+.jwapClose{position: relative; display: inline-block; width: 15px; height: 24px; cursor:pointer;}
+.jwapClose:hover{opacity:0.8;}
+.jwapClose:hover::before, .jwapClose:hover::after {background: #fff;}
+.jwapClose::before, .jwapClose::after {content: ''; position: absolute; height: 2px; width: 100%; top: 50%; left: 0;  margin-top: -1px; background: #fff;}
+.jwapClose::before {-webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg);  transform: rotate(45deg);}
+.jwapClose::after {-webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg);}
+.jwapClose.thick::before, .jwapClose.thick::after {height: 2px; margin-top:6px; margin-left: 5px;}
+
+.jwapRadius5{-moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
+.jwapRadius3{-moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px;}
+
+.jwapMessage .jwapInner .jwapListBox .jwapText{padding:30px 10px; color:#000; text-align:center; line-height:1.2; border-bottom:0px solid #ccc; overflow:hidden; word-wrap: break-word;word-break: break-all;}
+.jwapMessage .jwapInner .jwapListBox .jwapOperate{margin:5px 10px; padding-bottom:10px; line-height:30px; color:#fff; cursor:pointer;}
+.jwapMessage .jwapInner .jwapListBox .jwapOperate li{display:inline-block; min-width:120px; margin:0 10px; background:#EEA236;}
+.jwapMessage .jwapInner .jwapListBox .jwapOperate li:hover{background:#F0AD4E;}
+.jwapMessage .jwapInner .jwapListBox .jwapOperate .cancel{background:#bbb;}
+.jwapMessage .jwapInner .jwapListBox .jwapOperate .cancel:hover{background:#bfbfbf;}
+
+.jwapMessage .jwapInner .jwapListBox .jwapOperateDone{margin:5px 10px; padding-bottom:10px; line-height:30px; color:#fff; cursor:pointer;}
+.jwapMessage .jwapInner .jwapListBox .jwapOperateDone li{display:inline-block; min-width:120px; margin:0 10px; background:#EEA236;}
+.jwapMessage .jwapInner .jwapListBox .jwapOperateDone li:hover{background:#F0AD4E;}
+
+.jwapMessage .jwapInner .jwapListBox .jwapNoboder{padding:0}
+
+.jwapOverHidden{overflow:hidden;}
+
+.jwap_selector{cursor:pointer;}
