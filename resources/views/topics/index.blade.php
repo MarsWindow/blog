@@ -1,7 +1,31 @@
 @extends('layouts.app')
-
+@section('title', '话题列表')
 @section('content')
-<div class="container">
+<div class="row">
+    <div class="col-lg-9 col-md-9 topic-list">
+        <div class="panel panel-default">
+
+            <div class="panel-heading">
+                <ul class="nav nav-pills">
+                    <li role="presentation" class="active"><a href="#">最后回复</a></li>
+                    <li role="presentation"><a href="#">最新发布</a></li>
+                </ul>
+            </div>
+
+            <div class="panel-body">
+                {{-- 话题列表 --}}
+                @include('topics._topic_list', ['topics' => $topics])
+                {{-- 分页 --}}
+                {!! $topics->appends(Request::except('page'))->render() !!}
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 sidebar">
+        @include('topics._sidebar')
+    </div>
+</div>
+<!-- <div class="container">
     <div class="col-md-10 col-md-offset-1">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -28,14 +52,14 @@
                                     <td class="text-center"><strong>{{$topic->id}}</strong></td>
 
                                     <td>{{$topic->title}}</td> <td>{{$topic->body}}</td> <td>{{$topic->user_id}}</td> <td>{{$topic->category_id}}</td> <td>{{$topic->reply_count}}</td> <td>{{$topic->view_count}}</td> <td>{{$topic->last_reply_user_id}}</td> <td>{{$topic->order}}</td> <td>{{$topic->excerpt}}</td> <td>{{$topic->slug}}</td>
-                                    
+
                                     <td class="text-right">
                                         <a class="btn btn-xs btn-primary" href="{{ route('topics.show', $topic->id) }}">
-                                            <i class="glyphicon glyphicon-eye-open"></i> 
+                                            <i class="glyphicon glyphicon-eye-open"></i>
                                         </a>
-                                        
+
                                         <a class="btn btn-xs btn-warning" href="{{ route('topics.edit', $topic->id) }}">
-                                            <i class="glyphicon glyphicon-edit"></i> 
+                                            <i class="glyphicon glyphicon-edit"></i>
                                         </a>
 
                                         <form action="{{ route('topics.destroy', $topic->id) }}" method="POST" style="display: inline;" onsubmit="return confirm('Delete? Are you sure?');">
@@ -56,6 +80,6 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 @endsection
