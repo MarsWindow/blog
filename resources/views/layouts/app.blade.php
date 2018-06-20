@@ -24,6 +24,7 @@
     <script src="/js/bootstrap/bootstrap.min.js"></script>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @yield('styles')
 </head>
 
 <body>
@@ -37,6 +38,7 @@
     </div>
     <!-- Scripts -->
     <!-- <script src="{{ asset('js/app.js') }}"></script> -->
+    @yield('scripts')
     <script>
     $(function(){
         $('[data-toggle="weixin"]').tooltip({
