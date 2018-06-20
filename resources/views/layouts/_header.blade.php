@@ -11,12 +11,13 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse-4">
             <ul class="nav navbar-nav">
-                <li><a href=""><i class="fa fa-home"></i>首页</a></li>
-                <li><a href=""><i class="fa fa-paper-plane"></i>业界快讯</a></li>
-                <li><a href=""><i class="fa fa-shield"></i>技术博文</a></li>
+                <li class="{{ active_class(if_route('topics.index')) }}"><a href="{{ route('topics.index') }}"><i class="fa fa-home"></i>话题</a></li>
+                <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 1))) }}"><a href="{{ route('categories.show', 1) }}"><i class="fa fa-paper-plane"></i>分享</a></li>
+                <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 2))) }}"><a href="{{ route('categories.show', 2) }}"><i class="fa fa-shield"></i>教程</a></li>
                 <!-- <li><a href="#"><i class="fa fa-slideshare"></i>感官世界</a></li>
                 <li><a href="#"><i class="fa fa-hdd-o"></i>学习阅读</a></li> -->
-                <li><a href="" target="_blank"><i class="fa fa-edge"></i>网址导航</a></li>
+                <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 3))) }}"><a href="{{ route('categories.show', 3) }}" target="_blank"><i class="fa fa-edge"></i>问答</a></li>
+                <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 4))) }}"><a href="{{ route('categories.show', 4) }}" target="_blank"><i class="fa fa-edge"></i>公告</a></li>
 
                 <!-- <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-info-circle"></i>关于 <b class="caret"></b></a>
