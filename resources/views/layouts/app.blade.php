@@ -24,7 +24,7 @@
     <script src="/js/vendor/jquery-2.0.3.min.js"></script>
     <script src="/js/bootstrap/bootstrap.min.js"></script>
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
     @yield('styles')
 </head>
 

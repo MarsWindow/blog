@@ -355,15 +355,24 @@ p{
 .waterfall .list-group{
     width: 346px;
 }
+.media-body {
+    width: 450px;
+}
 }
 @media (min-width: 992px){
 .waterfall .list-group{
     width: 299px;
 }
+.media-body {
+    width: 600px;
+}
 }
 @media (min-width: 1200px){
 .waterfall .list-group {
     width: 271px;
+}
+.media-body {
+    width: 700px;
 }
 }
 
@@ -461,9 +470,6 @@ p{
     vertical-align: top;
 }
 
-.media-body {
-    width: 10000px;
-}
 .media, .media-body {
     overflow: hidden;
     zoom: 1;
@@ -2064,3 +2070,5 @@ aside.tags a:hover,.page-tags a:hover{
 	color: #A17820;
 	-webkit-transition: all .5s ease;-moz-transition: all .5s ease;-ms-transition: all .5s ease;-o-transition:  all .5s ease;transition: all .5s ease;
 }
+
+/*******new*******/
