@@ -13,6 +13,7 @@
 
     <title>@yield('title','博学 慎思 明辨 笃行') - Leo-Blog</title>
     <meta name="description" content="@yield('description', 'LeoBlog 博客空间')" />
+    <meta name="keyword" content="@yield('keyword', setting('seo_keyword', 'LeoBlog,社区,论坛,开发者论坛'))" />
     <link rel="stylesheet" href="/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="/css/flat-ui.css">
     <link rel="stylesheet" href="/css/font/font-awesome.min.css">
