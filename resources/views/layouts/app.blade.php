@@ -11,8 +11,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title','博学 慎思 明辨 笃行') - Leo-Blog</title>
-    <meta name="description" content="@yield('description', 'LeoBlog 博客空间')" />
+    <title>@yield('title','博学 慎思 明辨 笃行') - {{ setting('site_name', 'Leo-Blog') }}</title>
+    <meta name="description" content="@yield('description', setting('seo_description', 'LeoBlog 博客空间。'))" />
     <meta name="keyword" content="@yield('keyword', setting('seo_keyword', 'LeoBlog,社区,论坛,开发者论坛'))" />
     <link rel="stylesheet" href="/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="/css/flat-ui.css">
